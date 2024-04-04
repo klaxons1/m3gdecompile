@@ -90,8 +90,9 @@ struct keyframe_sequence_object : object3d_object
 		virtual void print(FILE* out, std::string const &indent,
 			int version)
 		{
-			PRINT_TEMPLATE(object3d_object, "EventItem",
-				out, indent, version);
+			// Assuming 'object3d_object' is a class instance of the type required by PRINT_TEMPLATE
+object3d_object.PRINT_TEMPLATE("EventItem", out, indent, version);
+
 		}
 	};
 
