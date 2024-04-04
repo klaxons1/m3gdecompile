@@ -120,7 +120,7 @@ inline void print_value(FILE *out, char const *indent, char const *name,
 	fprintf(out, "%s}\n", indent);
 }
 template<>
-inline int Stream::read(std::vector< image2d_object::mipmap > > *v, int count)
+inline int Stream::read(std::vector<image2d_object::mipmap> *v, int count)
 {
 	int size = 0;
 	for (int i = 0; i < count; ++i)
