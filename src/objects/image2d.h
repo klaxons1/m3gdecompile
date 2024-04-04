@@ -125,7 +125,7 @@ inline int Stream::read(std::vector<image2d_object::mipmap> *v, int count)
 	int size = 0;
 	for (int i = 0; i < count; ++i)
 	{
-		image2d_object::mipmaps t;
+		image2d_object::mipmap t;
 		t.load(*this, version);
 		v->push_back(t);
 	}
